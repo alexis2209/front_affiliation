@@ -1,5 +1,5 @@
 <template>
-  <component :is="componentInstance" :data=this.page></component>
+  <component :is="componentInstance" :data=this.page.datas></component>
 </template>
 
 <script>
@@ -10,24 +10,25 @@ export default {
   props: {
     data: {
       type: JSON,
+      page: []
     }
   },
   computed: {
     componentInstance () {
-      const name = this.page.configuration.component
+      const name = this.page.config.components
       return () => import(`../components/page/${name}`)
     }
   },
-  async asyncData({ params, $content, error }) {
-    const slug = params.pathMatch || params.slug || "home";
-    const page = await $content(slug)
-      .fetch()
-      .catch(err => {
-        console.log('ici erreur')
-        //error({ statusCode: 404, message: "Page not found" });
-      });
-    return {page}
-  },
+  async asyncData({ params, $http }) {
+    var slug = params.pathMatch || params.slug || "home";
+    var first = slug[0]
+    if (first == '/'){
+      slug = slug.substr(1)
+    }
+    const page = await $http.$get(`http://localhost:3000/fr/api/${slug}`)
+    console.log(page);
+    return { page }
+  }
 
 }
 </script>

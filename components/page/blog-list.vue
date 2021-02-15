@@ -1,7 +1,6 @@
 <template>
   <div>
-    <PageHeader
-      title="Latest News"
+    <PageHeader title="Latest News"
       :breadcrumb="[
                 { title: 'Home', url: '/' },
                 { title: 'Blog', url: '/' },
@@ -24,7 +23,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <BlogSidebar :position="end" />
+          <BlogSidebar />
         </div>
       </div>
     </div>

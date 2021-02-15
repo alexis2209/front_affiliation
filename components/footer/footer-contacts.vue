@@ -12,15 +12,15 @@
         <ul class="footer-contacts__contacts">
             <li>
                 <i class="footer-contacts__icon fas fa-globe-americas" />
-                {{ theme.contacts.address }}
+                adress
             </li>
             <li>
                 <i class="footer-contacts__icon far fa-envelope" />
-                {{ theme.contacts.email }}
+                mail
             </li>
             <li>
                 <i class="footer-contacts__icon fas fa-mobile-alt" />
-                {{ theme.contacts.phone }}, {{ theme.contacts.phone }}
+                phone
             </li>
             <li>
                 <i class="footer-contacts__icon far fa-clock" />
@@ -33,11 +33,9 @@
 <script lang="ts">
 
 import { Vue, Component } from 'vue-property-decorator'
-import theme from '~/data/theme'
 
 @Component
 export default class FooterContacts extends Vue {
-    theme = theme
 }
 
 </script>

@@ -54,7 +54,7 @@ export default {
   ],
   proxy: {
     '/fr/api': {
-      target: 'http://127.0.0.1:8000'
+      target: 'http://localhost:8000'
     }
   },
 

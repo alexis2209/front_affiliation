@@ -44,32 +44,21 @@
                 <div class="site-footer__copyright">
                     <!-- copyright -->
                     Powered by <a href="https://vuejs.org/" target="_blank">Vue.js</a> —
-                    Design by <a :href="theme.author.profile_url" target="_blank">{{ theme.author.name }}</a>
+                    Design by <a href="/" target="_blank">aa</a>
                     <!-- copyright / end -->
                 </div>
                 <div class="site-footer__payments">
-                    <img :src="$url.img('/images/payments.png')" alt="">
+
                 </div>
             </div>
         </div>
-        <ToTop />
     </div>
 </template>
 
 <script lang="ts">
 
-import { Vue, Component } from 'vue-property-decorator'
-import FooterContacts from '~/components/footer/footer-contacts.vue'
-import FooterLinks from '~/components/footer/footer-links.vue'
-import FooterNewsletter from '~/components/footer/footer-newsletter.vue'
-import ToTop from '~/components/footer/to-top.vue'
-import theme from '~/data/theme'
+export default{
 
-@Component({
-    components: { ToTop, FooterNewsletter, FooterLinks, FooterContacts }
-})
-export default class Footer extends Vue {
-    theme = theme
 }
 
 </script>

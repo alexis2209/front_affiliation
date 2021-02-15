@@ -25,18 +25,14 @@
             Follow us on social networks
         </div>
 
-        <social-links class="footer-newsletter__social-links" shape="circle" />
+        <a class="footer-newsletter__social-links" shape="circle" />
     </div>
 </template>
 
 <script lang="ts">
 
 import { Vue, Component } from 'vue-property-decorator'
-import SocialLinks from '~/components/shared/social-links.vue'
 
-@Component({
-    components: { SocialLinks }
-})
 export default class FooterNewsletter extends Vue { }
 
 </script>

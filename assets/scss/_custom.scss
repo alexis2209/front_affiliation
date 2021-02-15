@@ -1,3 +1,18 @@
 // -------------------------
 // --- You can add your custom CSS here and it will overwrite template styles.
 // -------------------------
+.topbar {
+  height: 34px;
+  background: transparent;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08);
+  border-bottom: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: #8c8c8c;
+  position: relative;
+  z-index: 20;
+}
+
+.topbar__item--link+.topbar__item--link {
+  margin-left: 16px;
+}
