@@ -28,7 +28,7 @@ export default {
   },
   async fetch() {
     this.menu = await this.$http.$get(
-      'http://127.0.0.1:3000/fr/api/menu'
+      process.env.API_URL + '/fr/api/menu'
     )
   },
 }
