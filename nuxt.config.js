@@ -1,4 +1,16 @@
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` })
+console.log(process.env.NODE_ENV);
 export default {
+
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
+
+  server: {
+    port: 8080, // default: 3000
+    host: 'monde-du-bricolage.dev' // default: localhost
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'front_affiliation',
@@ -50,11 +62,12 @@ export default {
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/proxy',
-    '@nuxt/http'
+    '@nuxt/http',
+    '@nuxtjs/dotenv'
   ],
   proxy: {
     '/fr/api': {
-      target: 'http://localhost:8000'
+      target: process.env.API_URL
     }
   },
 
