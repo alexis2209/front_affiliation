@@ -8,7 +8,7 @@ export default {
 
   server: {
     port: 8080, // default: 3000
-    host: 'monde-du-bricolage.dev' // default: localhost
+    host: 'monde-du-bricolage.fr' // default: localhost
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
