@@ -6,11 +6,6 @@ export default {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
 
-  server: {
-    port: 8080, // default: 3000
-    host: 'monde-du-bricolage.fr' // default: localhost
-  },
-
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'front_affiliation',
