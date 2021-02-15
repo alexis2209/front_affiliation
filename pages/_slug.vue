@@ -25,7 +25,7 @@ export default {
     if (first == '/'){
       slug = slug.substr(1)
     }
-    const page = await $http.$get(process.env.API_URL + `/fr/api/${slug}`)
+    const page = await $http.$get(process.env.BASE_URL + `/fr/api/${slug}`)
     console.log(page);
     return { page }
   }
