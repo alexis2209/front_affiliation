@@ -24,11 +24,14 @@
 </template>
 
 <script lang="ts">
-import Departments from "~/components/header/Departments";
-import NavLinks from "~/components/header/NavLinks";
+import Departments from "~/components/header/Departments.vue";
+import NavLinks from "~/components/header/NavLinks.vue";
 export default {
   props: [
     'menu'
   ],
+  components: {
+    Departments, NavLinks
+  }
 }
 </script>

@@ -33,11 +33,14 @@
 </template>
 
 <script>
-import TopBar from "~/components/header/TopBar";
-import NavPanel from "~/components/header/NavPanel";
+import TopBar from "~/components/header/TopBar.vue";
+import NavPanel from "~/components/header/NavPanel.vue";
 export default {
   props: [
     'menu'
   ],
+  components: {
+    TopBar, NavPanel
+  }
 }
 </script>
