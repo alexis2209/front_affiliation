@@ -68,14 +68,6 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    loaders: {
-      scss: {
-        prependData: '$siteid: ' + process.env.SITEID + ';'
-
-        // use `prependData` for sass-loader > 7.x
-        //prependData: '$myenv: ' + process.env.MY_ENV + ';'
-      }
-    },
     /*
         ** You can extend webpack config here
         */
