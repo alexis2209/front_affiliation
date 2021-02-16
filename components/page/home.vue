@@ -1,11 +1,11 @@
 <template>
   <div>
-    <BlockSlideshow :slides="data.slider" />
+    <BlockSlideShow :slides="data.slider" />
   </div>
 </template>
 
 <script>
-import BlockSlideshow from "~/components/header/BlockSlideshow";
+import BlockSlideShow from "~/components/block/BlockSlideShow";
 export default {
   props: [
     'data',
