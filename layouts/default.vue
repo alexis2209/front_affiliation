@@ -30,6 +30,7 @@ export default {
     this.menu = await this.$http.$get(
       process.env.BASE_URL + '/fr/api/menu'
     )
+    console.log(this.menu)
   },
 }
 </script>

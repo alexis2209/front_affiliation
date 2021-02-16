@@ -5,7 +5,7 @@
 </template>
 
 <script>
-
+import BlockSlideshow from "~/components/header/BlockSlideshow";
 export default {
   props: [
     'data',

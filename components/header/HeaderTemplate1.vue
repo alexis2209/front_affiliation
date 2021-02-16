@@ -1,6 +1,6 @@
 <template>
   <div class="site-header">
-    <Topbar />
+    <TopBar />
 
     <div class="site-header__middle container">
 
@@ -33,7 +33,8 @@
 </template>
 
 <script>
-
+import TopBar from "~/components/header/TopBar";
+import NavPanel from "~/components/header/NavPanel";
 export default {
   props: [
     'menu'

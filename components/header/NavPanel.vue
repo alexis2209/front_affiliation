@@ -24,6 +24,8 @@
 </template>
 
 <script lang="ts">
+import Departments from "~/components/header/Departments";
+import NavLinks from "~/components/header/NavLinks";
 export default {
   props: [
     'menu'
